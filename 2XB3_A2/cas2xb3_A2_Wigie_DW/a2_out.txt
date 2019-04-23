@@ -1,0 +1,18 @@
+BFS: Boston, New York City, Pittsburgh, Columbus, Chicago, Minneapolis
+DFS: Boston, New York City, Pittsburgh, Columbus, Chicago, St. Louis, Kansas City, Minneapolis
+
+Path and restaurant choices found through Dijkstra's Shortest Path Algorithm:
+
+----------------------------------------------------------------------------------------
+| City           |Restaurant Choice               |Meal Choice                 |Price  |
+--------------------------------------------------------------------------------------
+| Boston		 |No restaurant					  |No meal choice			   |$ 0.00 | 
+| New York City  |McDonalds-Connecticut Turnpike  |Double Cheeseburger - Meal  |$ 4.38 |
+| Pittsburgh     |McDonalds-East Liverpool        |McChicken - Meal            |$ 3.79 |
+| Columbus       |McDonalds-Bellefontaine         |Double Cheeseburger - Meal  |$ 4.38 |
+| Chicago        |McDonalds-Addison               |McChicken - Meal            |$ 3.79 |
+| Minneapolis    |McDonalds-Andover               |Double Cheeseburger - Meal  |$ 4.38 |
+----------------------------------------------------------------------------------------
+
+Total cost for meals on the trip: $ 20.72
+

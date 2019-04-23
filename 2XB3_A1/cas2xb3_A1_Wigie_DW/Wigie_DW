@@ -1,0 +1,3 @@
+The test cases I created for each sorting algorithm are in separate classes. A test suite (SortTest.java) was created to run all the test
+cases all together. I chose to use microseconds to time my programs because nanoseconds gave values which are too large and milliseconds 
+gave values which are barely noticeable. 

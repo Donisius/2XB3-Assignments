@@ -1,0 +1,40 @@
+------------------------------------------------------------------------------
+Section 3.1 Answer
+------------------------------------------------------------------------------
+Since the first question is asking to provide a route between two cities based
+on unidirectional routes, the type of graph that is needed to solve this part 
+of the assignment is a directed graph with non weighted edges since it is only 
+asking for a route found through bfs and dfs. The nodes on the graph represent 
+the cities and the edges represent the paths between the cities.
+
+For the second part of the question the graph I used was an edge weighted 
+directed graphs since this time we need to take into account distance and food
+cost. The weight on the edges of this directed graph is based on the distance 
+between cities found through the Haversine function and also takes into account
+the available food options and finds the lowest cost meal in each city. The 
+weighted edges of the graph represent the distance between the two cities and 
+cost of the meal options available in the two cities. The nodes of the edge
+weighted directed graph represent the cities. I used Dijkstra's shortest path
+algorithm in order to find the shortest distance between the cities based on 
+distance and then found the possible meal options available in that city and 
+chose the lowest cost option provided that in the previous city, it did not 
+choose the same option.
+------------------------------------------------------------------------------
+Section 3.2 Answer
+------------------------------------------------------------------------------
+The algorithm which found the result in fewer steps is breadth first search, 
+and this will always be the case even if the number of stops increases. This is 
+because with DFS, the order in which it takes us through the graph to get from 
+source to destination has nothing to do with finding the route in the smallest 
+number of steps. BFS is based on finding the shortest path and therefore, even 
+if the number of stops is increased, BFS will always find the path with the 
+smallest (or equal) number of steps to DFS.
+------------------------------------------------------------------------------
+Section 3.4 Answer
+------------------------------------------------------------------------------
+Since I used Dijkstra's shortest path algorithm which uses a priority queue 
+implemented using binary heaps, all operations are logN. Since there will be V 
+number of vertices put into the queue, this can be represented as logV. Dijkstra's
+will have E number of operations an therefore the complexity of the problem is 
+ElogV. The complexity will remain the same even if the number of stops increases
+and the number of restaurants increases. 
